@@ -19,8 +19,8 @@ function Default() {
             <Button className='header-btn' component={RouterLink} to="/hello">
               Hello React
             </Button>
-            <Button className='header-btn' component={RouterLink} to='/test/1'>
-              Test React
+            <Button className='header-btn' component={RouterLink} to='/webgl'>
+              Web Gl
             </Button>
           </Toolbar>
         </Container>

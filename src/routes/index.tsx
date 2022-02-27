@@ -1,7 +1,8 @@
 import type { RouteObject } from "react-router-dom";
 import Default from "src/layout/default";
 import Hello from './hello';
-import Test from './test';
+import Webgl from './webgl';
+import Test from "./webgl/test";
 
 const routes: RouteObject[] = [
   {
@@ -13,10 +14,14 @@ const routes: RouteObject[] = [
         element: <Hello />,
       },
       {
-        path: "/test",
+        path: "/webgl",
         children: [
           {
-            path: '/test/1',
+            path: '',
+            element: <Webgl />,
+          },
+          {
+            path: '/webgl/test',
             element: <Test />,
           }
         ]
